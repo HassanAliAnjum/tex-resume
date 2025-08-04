@@ -1,0 +1,114 @@
+% Setting up the document class and geometry
+\documentclass[11pt]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{xcolor}
+
+% Configuring fonts
+\usepackage[default]{sourcesanspro}
+
+% Customizing section headers
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+
+% Removing page numbers
+\pagestyle{empty}
+
+% Customizing hyperlink appearance
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue
+}
+
+% Setting up itemize environment for compact lists
+\setlist[itemize]{leftmargin=*,nosep,itemsep=2pt,topsep=2pt}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\LARGE\textbf{HASSAN ALI ANJUM}} \\
+    \vspace{5pt}
+    Lahore, Pakistan \textbullet{} +92 (313) 452-1411 \textbullet{} hassanalianjum@gmail.com \textbullet{} \href{https://linkedin.com/in/hacanaly}{linkedin.com/in/hacanaly}
+\end{center}
+
+% Professional Summary
+\section*{SUMMARY}
+Experienced software developer with a proven track record of delivering high-quality mobile games and applications under tight deadlines. A proactive and collaborative team player, committed to streamlining development workflows and elevating code quality. Actively involved in system architecture, feature planning, and prototyping of innovative game experiences.
+
+% Skills
+\section*{SKILLS}
+\begin{itemize}
+    \item \textbf{Programming Languages}: C\#, C++, JavaScript/TypeScript
+    \item \textbf{Frameworks}: Unity, Cocos2d-x/Cocos Creator
+    \item \textbf{Tools}: Git, Jenkins, TeamCity, AWS, Rider, VS Code
+    \item \textbf{Methodologies}: Agile (Scrum), CI/CD, Test-Driven Development (TDD)
+    \item \textbf{Additional Skills}: Game Design, Multiplayer Networking, Cross-Platform Development
+\end{itemize}
+
+% Professional Experience
+\section*{EXPERIENCE}
+% Revolving Games
+\textbf{Revolving Games, Inc.} \\
+\textbf{Senior Software Engineer} \hfill \textbf{Lahore, Pakistan} \\
+\textit{July 2021 -- Present}
+\begin{itemize}
+	\item \textbf{War of Nova}: Managed a cross-functional team delivering core 2D features for a competitive 4X strategy title owned development of front-end views, internal tools, and platform integrations to support live operations and store deployment.
+	\item \textbf{Hatchlings}: A Tamagotchi-style creature care web game set in a fantasy world, where players raise elemental Hatchlings through feeding, training, and habitat customization. Collaborated on game systems, progression mechanics, and player engagement loops inspired by virtual pet simulations.
+\end{itemize}
+% Caramel Tech Studios
+\textbf{Caramel Tech Studios} \\
+\textbf{Senior Software Engineer} \hfill \textbf{Lahore, Pakistan} \\
+\textit{September 2019 -- June 2021}
+\begin{itemize}
+	\item \textbf{Chaos Battle League}: A fast paced, real-time, multiplayer smack down build in Unity with awesome 3D art and complex animations, released on both iOS and Android. Implemented Guilds/Clans, Donations, Chat and Store using socket client and framework to manage UI’s in multiple layers. 
+	\item \textbf{Oz Broken Kingdom}: RPG based game with classic Oz heroes in breathtaking turn-based animation rich combat made in Unity, released on iOS, Android and Facebook Gameroom. Implemented core game mechanism, UI management system and Chat.
+\end{itemize}
+% Fizz.io
+\textbf{Fizz.io} \\
+\textbf{Software Engineer} \hfill \textbf{Lahore, Pakistan} \\
+\textit{Jan 2016 -- August 2019}
+\begin{itemize}
+	\item \textbf{Fizz SDK}: Implemented Chat SDK in C\# on Fizz REST API and MQTT (IoT framework) for live events. Some of the main features include Channels, Messages, Analytics, Moderation, Filters, Translation, Custom Messages, Admin Messaging and Segmented Pushes. Created a full featured plug n play user interface made in UGUI, fabricated a custom keyboard to give it the feel of IM and most importantly Emoji’s and Stickers in Unity. Implemented Edit Mode and Play Mode tests using Unit Test Runner for MVVM based UI.
+	\item \textbf{CheetayPOP}: Live trivia quiz game created in Unity by using Firebase for backed, Agora for interactive broadcasting of host and Fizz for live chat with participants.
+\end{itemize}
+% Caramel Tech Studios
+\textbf{Caramel Tech Studios} \\
+\textbf{Software Engineer} \hfill \textbf{Lahore, Pakistan} \\
+\textit{April 2014 -- Dec 2015}
+\begin{itemize}
+	\item \textbf{Blades of Battle RPG}: An epic RPG made in Cocos2d-x. I was responsible for making User Profiles, Guilds, Battle animations and Replay, XMPP chat, Trade enabled with Digit API and Battle Arena. Available on both iOS and Android.
+\end{itemize}
+% Gameview Studios
+\textbf{Gameview Studios} \\
+\textbf{Software Engineer} \hfill \textbf{Lahore, Pakistan} \\
+\textit{July 2012 -- March 2014}
+\begin{itemize}
+	\item \textbf{Hayride}: An isometric view farming game with smooth controls made in both Unity and Cocos2dx. Released for android, iOS and Facebook build with some really challenging tasks including tiled map and a lot of animations.
+\end{itemize}
+
+% Education
+\section*{EDUCATION}
+\textbf{B.S. in Information Technology}  \\ 
+\textbf{Punjab University College of Information Technology} \hfill \textbf{Lahore, Pakistan}\\
+\textit{Graduated: July 2012} 
+
+% Awards
+\section*{HONOR-AWARDS}
+\begin{itemize}
+    \item \textbf{Winner -- IEEE Game Jam} \\
+    \textit{March 2014}
+\end{itemize}
+
+% References
+\section*{REFERENCES}
+\textbf{Atif Gulzar} \\
+\textit{VP Engineering} \href{mailto:atif@revolvinggames.com}{atif@revolvinggames.com}\\
+\textbf{Nawaf Mahmood} \\
+\textit{Game Producer} \href{mailto:nawaf@revolvinggames.com}{nawaf@revolvinggames.com}\\
+
+\end{document}
