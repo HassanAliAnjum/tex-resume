@@ -1,4 +1,7 @@
-% Setting up the document class and geometry
+
+% ATS-Optimized Resume Style File
+
+% Document setup
 \documentclass[11pt]{article}
 \usepackage[margin=0.75in]{geometry}
 \usepackage{enumitem}
@@ -7,48 +10,53 @@
 \usepackage{parskip}
 \usepackage{xcolor}
 
-% Configuring fonts
+% Font
 \usepackage[default]{sourcesanspro}
 
-% Customizing section headers
-\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
-\titlespacing*{\section}{0pt}{10pt}{5pt}
+% Section headers with thin divider line
+\titleformat{\section}
+  {\large\bfseries}{}{0em}{}
+\titlespacing*{\section}{0pt}{10pt}{6pt}
 
-% Removing page numbers
+% Redefine titlerule to make it thinner
+\renewcommand{\titlerule}{\rule{\linewidth}{0.4pt}}
+
+% Remove page numbers
 \pagestyle{empty}
 
-% Customizing hyperlink appearance
+% Hyperlink style
 \hypersetup{
     colorlinks=true,
     linkcolor=black,
     urlcolor=blue
 }
 
-% Setting up itemize environment for compact lists
-\setlist[itemize]{leftmargin=*,nosep,itemsep=4pt,topsep=4pt}
+% Compact lists for resume
+\setlist[itemize]{leftmargin=*,nosep,itemsep=2pt,topsep=2pt}
 
 \begin{document}
 
-% Header
+% Header (ATS-friendly)
 \begin{center}
-    {\LARGE\textbf{HASSAN ALI ANJUM}} \\
-    \vspace{5pt}
+    {\LARGE \textbf{HASSAN ALI ANJUM}} \\[6pt]
     Lahore, Pakistan \textbullet{} +92 (313) 452-1411 \textbullet{} hassanalianjum@gmail.com \textbullet{} \href{https://linkedin.com/in/hacanaly}{linkedin.com/in/hacanaly}
 \end{center}
 
 % Professional Summary
 \section*{SUMMARY}
-Experienced software developer with a proven track record of delivering high-quality mobile games and applications under tight deadlines. A proactive and collaborative team player, committed to streamlining development workflows and elevating code quality. Actively involved in system architecture, feature planning, and prototyping of innovative game experiences.
+Seasoned Game Developer with over a decade of experience architecting and delivering engaging mobile and web-based games using Unity and C\#. Skilled in designing robust game systems, optimizing performance for cross-platform compatibility and meeting aggressive deadlines. Proficient in modern frameworks, CI/CD pipelines, and innovative prototyping to drive player engagement. Passionate about crafting scalable, data-driven architectures and mentoring teams to deliver high-impact gaming experiences.
 
 % Skills
 \section*{SKILLS}
 \begin{itemize}
-    \item \textbf{Programming Languages}: C\#, C++, JavaScript/TypeScript
-    \item \textbf{Frameworks}: Unity, Cocos2d-x/Cocos Creator
+    \item \textbf{Programming Languages}: C\#, C++, JavaScript
+    \item \textbf{Frameworks}: Unity, Cocos2d-x
     \item \textbf{Tools}: Git, Jenkins, TeamCity, AWS, Rider, VS Code
     \item \textbf{Methodologies}: Agile (Scrum), CI/CD, Test-Driven Development (TDD)
     \item \textbf{Additional Skills}: Game Design, Multiplayer Networking, Cross-Platform Development
 \end{itemize}
+
+
 
 % Professional Experience
 \section*{EXPERIENCE}
@@ -57,8 +65,8 @@ Experienced software developer with a proven track record of delivering high-qua
 \textbf{Senior Software Engineer} \hfill \textbf{Lahore, Pakistan} \\
 \textit{July 2021 -- Present}
 \begin{itemize}
-	\item \textbf{War of Nova}: Managed a cross-functional team delivering core 2D features for a competitive 4X strategy title owned development of front-end views, internal tools, and platform integrations to support live operations and store deployment.
-	\item \textbf{Hatchkings}: Led a cross-functional team to develop and deliver HatchKings, a Telegram-based game integrating slot machine mechanics, dragon collection, egg hatching, leaderboards, and a Telegram Stars-powered shop, enhancing user engagement and monetization.
+	\item \textbf{War of Nova}: Managed a cross-functional team that delivered core 2D features for a competitive 4X strategy title-owned development of front-end views, internal tools, and platform integrations for live operations and store deployment.
+	\item \textbf{Hatchkings}: Led a cross-functional team to develop and deliver HatchKings, a Telegram-based game that integrates slot machine mechanics, dragon collection, egg hatching, leaderboards, and a Telegram Stars-powered shop, enhancing user engagement and monetization.
 	\item \textbf{Hatchlings}: Developed a Tamagotchi-inspired web game using Unity and WebGL, featuring elemental creature care, training, and habitat customization mechanics. Collaborated on game systems and player engagement loops to create an interactive virtual pet experience. Optimized performance for seamless browser-based gameplay and ensured cross-platform compatibility.
 \end{itemize}
 % Caramel Tech Studios
@@ -66,8 +74,8 @@ Experienced software developer with a proven track record of delivering high-qua
 \textbf{Senior Software Engineer} \hfill \textbf{Lahore, Pakistan} \\
 \textit{September 2019 -- June 2021}
 \begin{itemize}
-	\item \textbf{Chaos Battle League}: Contributed to the development and live operations of Chaos Battle League, a fast-paced, real-time multiplayer game built in Unity with high-quality 3D art and complex animations. Implemented key features including Guilds/Clans, Donations, Chat, and Store functionalities using socket client and a custom framework to manage multi-layered UI, enhancing player engagement and social interaction.
-	\item \textbf{Oz Broken Kingdom}: Developed core game mechanics, UI management system, and chat functionality for a turn-based RPG built in Unity, featuring classic Oz heroes with animation-rich combat. Contributed to a seamless player experience across iOS, Android, and Facebook Gameroom platforms, enhancing gameplay and social engagement.
+	\item \textbf{Chaos Battle League}: Contributed to the development and live operations of Chaos Battle League, a fast-paced, real-time multiplayer game built in Unity with high-quality 3D art and complex animations. Implemented key features including guilds / clans, donations, chat and store functionalities using a socket client and a custom framework to manage multi-layered user interface, enhancing player engagement and social interaction.
+	\item \textbf{Oz Broken Kingdom}: Developed core game mechanics, user interface management system, and chat functionality for a turn-based RPG built in Unity, featuring classic Oz heroes with animation-rich combat. Contributed to a seamless player experience across the iOS, Android, and Facebook Gameroom platforms, enhancing gameplay and social engagement.
 \end{itemize}
 \newpage
 % Fizz.io
@@ -75,22 +83,22 @@ Experienced software developer with a proven track record of delivering high-qua
 \textbf{Software Engineer} \hfill \textbf{Lahore, Pakistan} \\
 \textit{Jan 2016 -- August 2019}
 \begin{itemize}
-	\item \textbf{Fizz SDK}: Developed a robust C\# Chat SDK for Unity, integrating Fizz REST API and MQTT for real-time live event handling, supporting features like Channels, Messages, Analytics, Moderation, Filters, Translation, Custom Messages, Admin Messaging, and Segmented Pushes. Designed a plug-and-play UGUI-based chat UI SDK for seamless drag-and-drop integration, featuring a custom keyboard, emojis, and stickers to enhance the instant messaging experience. Implemented Edit Mode and Play Mode tests using Unity Test Runner for MVVM-based UI, ensuring reliability and performance.
-	\item \textbf{CheetayPOP}: Solely developed the client for a live trivia quiz game in Unity, achieving 20,000 concurrent users. Integrated Firebase for backend services, Agora for real-time interactive host broadcasting, and Fizz for live chat functionality, delivering a seamless and engaging multiplayer experience across iOS and Android platforms.
+	\item \textbf{Fizz SDK}: Developed a robust C\# Chat SDK for Unity, integrating Fizz REST API and MQTT for real-time live event handling, supporting features such as channels, Messages, Analytics, Moderation, Filters, Translation, Custom Messages, Admin Messaging, and Segmented Pushes. Engineered a plug-n-play user interface in UGUI and designed a custom keyboard with emojis and stickers in Unity, enhancing user engagement on 15+ game titles.
+	\item \textbf{CheetayPOP}: Solely developed the client for a live trivia quiz game in Unity, achieving 20,000 concurrent users. Integrated Firebase for back-end services, Agora for real-time interactive host broadcasting, and Fizz for live chat functionality, delivering a seamless and engaging multiplayer experience across iOS and Android platforms.
 \end{itemize}
 % Caramel Tech Studios
 \textbf{Caramel Tech Studios} \\
 \textbf{Software Engineer} \hfill \textbf{Lahore, Pakistan} \\
 \textit{April 2014 -- Dec 2015}
 \begin{itemize}
-	\item \textbf{Blades of Battle RPG}: Developed key features for an epic RPG built in Cocos2d-x, including User Profiles, Guilds, Battle Animations, Replay system, XMPP-based chat, Digit API-integrated trading, and Battle Arena. Enhanced player engagement and social interaction, delivering a robust experience across iOS and Android platforms.
+	\item \textbf{Blades of Battle RPG}: Developed key features for an epic RPG built in Cocos2d-x, including User Profiles, Guilds, Battle Animations, Replay system, XMPP-based chat, Digit API-integrated trading, and Battle Arena. Enhanced player engagement and social interaction, delivering a robust experience on iOS and Android platforms.
 \end{itemize}
 % Gameview Studios
 \textbf{Gameview Studios} \\
 \textbf{Software Engineer} \hfill \textbf{Lahore, Pakistan} \\
 \textit{July 2012 -- March 2014}
 \begin{itemize}
-	\item \textbf{Hayride}: Developed a visually rich isometric farming game with smooth controls using Unity and Cocos2d-x, featuring tiled map integration and complex animations. Overcame technical challenges to deliver engaging gameplay across iOS, Android, and Facebook platforms, enhancing player immersion and interaction.
+	\item \textbf{Hayride}: Developed a visually rich isometric farming game with smooth controls using Unity and Cocos2d-x, featuring tiled map integration and complex animations. Overcame technical challenges to deliver engaging gameplay across the iOS, Android, and Facebook platforms, enhancing player immersion and interaction.
 \end{itemize}
 
 % Education
